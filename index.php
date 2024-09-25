@@ -8,19 +8,21 @@
 </head>
 <body>
     <div class="titulo">
-        <h3><center>BEM VINDO AO SITE WEBDESIGN EM FOCO</center></h3>
+        <h1><center>BEM VINDO AO SITE WEBDESIGN EM FOCO</center></h1>
     </div>
-    <hr>
-    <div class="conteudo">
-        <h4><center>ESCOLHA O IDIOMA PARA ENTRAR</center></h4>
-    </div>
+    <br>
+        <h2><center>ESCOLHA O IDIOMA PARA ENTRAR</center></h2>
     <br>
     <br>
     <div class ="container">
         <a href = "idioma.php">
-        <img src="reino-unido.png" alt="Bandeira Reino Unido">
-        <img src="brasil.png" alt="Bandeira Brasil">
-        <img src="espanha.png" alt="Bandeira Espanha">
+            <img src="reino-unido.png" alt="Bandeira Reino Unido">
+        </a>
+        <a href = "idioma.php">
+            <img src="brasil.png" alt="Bandeira Brasil">
+        </a>
+        <a href = "idioma.php">
+            <img src="espanha.png" alt="Bandeira Espanha">
         </a>
     </div>
 </body>

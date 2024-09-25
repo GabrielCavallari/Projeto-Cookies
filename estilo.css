@@ -13,18 +13,13 @@ body {
     color: darkseagreen;
 }
 
-.conteudo {
-    background-color: white;
-    h4 {
-        color: darkseagreen;
-    }
-}
-
 .container { 
      display: flex;
      justify-content: center;
+     gap: 50px;
 }
+
 img {
-    margin: 0 20px;
-    width: 7%;
+    width: 150px;
+    height: auto;
 }
