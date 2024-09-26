@@ -8,15 +8,15 @@
 
     <?php
         $mostrartexto = false;
-        if(isset($_COOKIE["idiomaEscolhido"]))
+        if(isset($_COOKIE["idiomaEscolhido"])){
             include "compara.inc";
             $mostrartexto = true;
-        
+        }
     ?>
     <style>
         <?php if ($mostrartexto): ?>
             .titulo, .container, h2 {
-                display: none;
+                display: none;  /* Esconde os elementos quando o texto for exibido */
             }
         <?php endif ?>
     </style>
@@ -48,6 +48,8 @@
         if ($mostrartexto && file_exists("versao.txt")) {
             $conteudo = file_get_contents("versao.txt");
             echo "<p>$conteudo</p>";
+
+            echo '<br><br><a href="limpar_cookie.php">Escolher outro idioma</a>';
         }
     ?>
 </body>
