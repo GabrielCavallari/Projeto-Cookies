@@ -7,10 +7,19 @@
     <link rel="stylesheet" href="estilo.css">
 
     <?php
+        $mostrartexto = false;
         if(isset($_COOKIE["idiomaEscolhido"]))
             include "compara.inc";
+            $mostrartexto = true;
         
     ?>
+    <style>
+        <?php if ($mostrartexto): ?>
+            .titulo, .container, h2 {
+                display: none;
+            }
+        <?php endif ?>
+    </style>
 </head>
 <body>
     <div class="titulo">
@@ -36,7 +45,7 @@
     <br><br>
 
     <?php
-        if (file_exists("versao.txt")) {
+        if ($mostrartexto && file_exists("versao.txt")) {
             $conteudo = file_get_contents("versao.txt");
             echo "<p>$conteudo</p>";
         }
